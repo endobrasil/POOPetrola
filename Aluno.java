@@ -47,8 +47,8 @@ public class Aluno {
     public String exibirInformacoes() {
         String info="";
         info+=("Nome: " + nome);
-        info+=("Curso: " + curso);
-        info+=("Idade: " + idade);
+        info+=(", Curso: " + curso);
+        info+=(", Idade: " + idade);
 
         return info;
     }
@@ -85,7 +85,7 @@ public class Aluno {
     }
 
     }
-
+    
     public String saudacao() {
         String mensagem;
         mensagem = this.hora();

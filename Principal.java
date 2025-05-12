@@ -12,6 +12,7 @@ public class Principal{
         // Exibindo as informações do aluno
         System.out.println("Informações iniciais:");
         System.out.println(aluno1.exibirInformacoes());
+        System.out.println(aluno2.exibirInformacoes());
         
 
         // Modificando os dados do aluno
@@ -22,8 +23,10 @@ public class Principal{
         // Exibindo novamente após as mudanças
         System.out.println("\nInformações atualizadas:");
         aluno1.adicionarAula(prof.lecionarAula("Psicologia da Aprendizagem"));
-        aluno1.adicionarAula(prof.lecionarAula("POO com Java"));
+        aluno1.adicionarAula(prof2.lecionarAula("POO com Java"));
         aluno1.adicionarAula(prof.lecionarAula("Estruturas de Dados"));
+        aluno1.adicionarAula(prof2.lecionarAula("Cabeça pensante"));
+        
         System.out.println(aluno1.saudacao());
         System.out.println(aluno1.saudacao(aluno2));
         System.out.println(aluno1.saudacao(prof));
@@ -44,9 +47,12 @@ public class Principal{
 
         // Exibir informações iniciais
         prof.exibirInformacoes();
+        prof2.exibirInformacoes();
         
 
         // Adicionando aulas assistidas (herdado de Aluno)
+        prof.adicionarAula("Didática");
+        prof.adicionarAula("Psicologia da Educação");
         prof.adicionarAula("Didática");
         prof.adicionarAula("Psicologia da Educação");
 
@@ -55,11 +61,13 @@ public class Principal{
         prof.adicionarFormacao("Mestrado em Educação");
 
         System.out.println("\nInformações após atualizações:");
-        prof.exibirInformacoes();
+        System.out.println(prof.exibirInformacoes());
+        System.out.println(prof2.exibirInformacoes());
         
 
         
     }
 }
+
 
 

@@ -45,7 +45,7 @@ public class Professor extends Aluno {
 
     public String lecionarAula(String disciplina) {
         aulasMinistradas++;
-        return "Professor " + getNome() + " lecionou a disciplina: " + disciplina;
+        return "Professor " + this.getNome() + " lecionou a disciplina: " + disciplina;
     }
 
     //sobreescrevendo metodo da hora
@@ -77,9 +77,9 @@ public class Professor extends Aluno {
     public String exibirInformacoes() {
         String info="";
         info+= super.exibirInformacoes(); // chama método da superclasse
-        info+=("Área de atuação: " + area);
+        info+=(", Área de atuação: " + area);
         info+=listarFormacoes();
-        info+=("Aulas ministradas: " + aulasMinistradas);
+        info+=(", Aulas ministradas: " + aulasMinistradas);
         return info;
     }
 }
